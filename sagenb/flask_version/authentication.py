@@ -1,11 +1,11 @@
 import os
 import random
-from flask import Module, url_for, render_template, request, session, redirect, g, current_app
+from flask import Flask, url_for, render_template, request, session, redirect, g, current_app
 from .decorators import with_lock
 from flask.ext.babel import gettext, ngettext, lazy_gettext
 _ = gettext
 
-authentication = Module('sagenb.flask_version.authentication')
+authentication = Flask('sagenb.flask_version.authentication')
 
 ##################
 # Authentication #
