@@ -4,7 +4,7 @@ from decorators import login_required, admin_required, with_lock
 from flask.ext.babel import Babel, gettext, ngettext, lazy_gettext
 _ = gettext
 
-admin = Bllueprint('sagenb.flask_version.admin')
+admin = Blueprint('sagenb.flask_version.admin', __name__)
 
 @admin.route('/users')
 @admin.route('/users/reset/<reset>')

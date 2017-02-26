@@ -20,7 +20,7 @@ from decorators import login_required, guest_or_login_required
 from flask.ext.babel import gettext, ngettext, lazy_gettext
 _ = gettext
 
-doc = Blueprint('sagenb.flask_version.doc')
+doc = Blueprint('sagenb.flask_version.doc', __name__)
 
 from sage.env import SAGE_DOC
 DOC = os.path.join(SAGE_DOC, 'html', 'en')

@@ -11,7 +11,7 @@ _ = gettext
 from sagenb.notebook.interact import INTERACT_UPDATE_PREFIX
 from sagenb.notebook.misc import encode_response
 
-ws = Blueprint('sagenb.flask_version.worksheet')
+ws = Blueprint('sagenb.flask_version.worksheet', __name__)
 worksheet_locks = defaultdict(threading.Lock)
 
 def worksheet_view(f):

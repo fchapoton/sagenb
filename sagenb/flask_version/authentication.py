@@ -5,7 +5,7 @@ from decorators import with_lock
 from flask.ext.babel import gettext, ngettext, lazy_gettext
 _ = gettext
 
-authentication = Blueprint('sagenb.flask_version.authentication')
+authentication = Blueprint('sagenb.flask_version.authentication', __name__)
 
 ##################
 # Authentication #

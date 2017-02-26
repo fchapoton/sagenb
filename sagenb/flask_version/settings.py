@@ -6,7 +6,7 @@ from flask.ext.babel import gettext, ngettext, lazy_gettext
 _ = gettext
 
 
-settings = Blueprint('sagenb.flask_version.settings')
+settings = Blueprint('sagenb.flask_version.settings', __name__)
 
 @settings.route('/settings', methods = ['GET','POST'])
 @login_required

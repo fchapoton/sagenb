@@ -83,7 +83,7 @@ class SageNBFlask(Flask):
         return render_template(os.path.join('html', 'error_message.html'),
                                **template_dict)
 
-base = Blueprint('sagenb.flask_version.base')
+base = Blueprint('sagenb.flask_version.base', __name__)
 
 #############
 # Main Page #
