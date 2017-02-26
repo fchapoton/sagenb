@@ -86,7 +86,7 @@ class SageNBFlask(Flask):
         return render_template(os.path.join('html', 'error_message.html'),
                                **template_dict)
 
-base = Module('sagenb.flask_version.base')
+base = Flask('sagenb.flask_version.base')
 
 #############
 # Main Page #
