@@ -18,7 +18,10 @@ import shutil
 import socket
 import sys
 import hashlib
-from exceptions import SystemExit
+try:
+    from exceptions import SystemExit
+except ImportError:
+    pass
 
 from twisted.python.runtime import platformType
 
